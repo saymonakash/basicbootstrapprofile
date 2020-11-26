@@ -1,0 +1,61 @@
+/* ================================================
+============== Theme CSS ==========================
+=================================================== */
+[id*=-error]{
+	color:yellow;
+	float:left;
+	margin-top:-10px;
+}
+
+/* ===== MENU PART ===== */
+#main-menu a.active,
+#main-menu a:hover{
+	background-color:black;
+}
+/* ===== HOME PART ===== */
+#home{
+	background-image:url('../images/banner.jpg');
+}
+/* ===== SERVICE PART ===== */
+#service{
+	background:url('../images/service.jpg');
+}
+#service .bg-gray-50:hover{
+	background-color:#007bff !important;
+}
+/* ===== REVIEW PART ===== */
+#review{
+	background-image:url('../images/review.jpg');
+}
+/* ===== CONTACT PART ===== */
+#contact{
+	background-image:url('../images/contact.jpg');
+}
+/* ===== FOOTER PART ===== */
+#social a{
+	height:40px;
+	width:40px;
+}
+#upper{
+	display:none;
+}
+
+/* ===== MEDIA QUARY RESPONSIVE MENU ===== */
+@media (max-width: 576px){
+	#home p{
+		font-size:.7rem;
+	}
+	#home h6{
+		font-size:.8rem;
+	}
+	#home h2{
+		font-size:1rem;
+	}
+	#home .btn{
+		font-size:.65rem;
+	}
+	#home img{
+		min-height:200px;
+	}
+}
+		

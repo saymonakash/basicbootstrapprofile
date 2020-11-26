@@ -1,0 +1,51 @@
+/* ================================================
+============== Global CSS For All Template ========
+=================================================== */
+
+/* ----------- a --------------*/
+
+/* ----------- b --------------*/
+.bg-size-cover{
+	background-size:cover !important;
+}
+.bg-position-center{
+	background-position:center !important ;
+}
+.bg-attachment-fixed{
+	background-attachment:fixed !important;
+}
+.bg-dark-50{
+	background-color:#0000045c !important;
+}
+.bg-gray-50{
+	background-color:#ffffff47 !important;
+}
+.bg-transparent-noimportant {
+    background-color: transparent;
+}
+/* ----------- c --------------*/
+.card:hover .card-hover-visible{
+	visibility:visible;
+	opacity:1;
+}
+.card-hover-visible{
+	visibility:hidden;
+	opacity:0;
+	transition: all 0.7s;
+}
+/* ----------- d --------------*/
+
+
+/* ----------- s --------------*/
+section{
+	padding-top:100px;
+	padding-bottom:75px;
+}
+/* ----------- t --------------*/
+.top-auto{
+	top:auto;
+}
+.left-auto{
+	left:auto;
+}
+
