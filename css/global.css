@@ -1,51 +1,90 @@
-/* ================================================
-============== Global CSS For All Template ========
-=================================================== */
-
-/* ----------- a --------------*/
-
-/* ----------- b --------------*/
-.bg-size-cover{
-	background-size:cover !important;
-}
-.bg-position-center{
-	background-position:center !important ;
-}
-.bg-attachment-fixed{
-	background-attachment:fixed !important;
-}
-.bg-dark-50{
-	background-color:#0000045c !important;
-}
-.bg-gray-50{
-	background-color:#ffffff47 !important;
-}
-.bg-transparent-noimportant {
-    background-color: transparent;
-}
-/* ----------- c --------------*/
-.card:hover .card-hover-visible{
-	visibility:visible;
-	opacity:1;
-}
-.card-hover-visible{
-	visibility:hidden;
-	opacity:0;
-	transition: all 0.7s;
-}
-/* ----------- d --------------*/
-
-
-/* ----------- s --------------*/
+/* --------------------------------
+-- Global CSS For All Template ----
+----------------------------------- */
 section{
 	padding-top:100px;
 	padding-bottom:75px;
 }
-/* ----------- t --------------*/
+.btn{
+	box-shadow:none!important;
+}
+/* ---- a ---- */
+/* ---- b ---- */
+.bg-norepeat{
+	background-repeat:no-repeat;
+}
+.bg-size-cover{
+	background-size:cover;
+}
+.bg-position-center{
+	background-position:center;
+}
+.bg-attachment-fixed{
+	background-attachment:fixed;
+}
+.bg-gray-50{
+	background-color: #6c757d87!important;
+}
+.bg-transparent-noimportant {
+    background-color: transparent;
+}
+/* ---- c ---- */
+
+
+.line-height-175{
+	line-height: 1.75;
+}
 .top-auto{
 	top:auto;
 }
 .left-auto{
 	left:auto;
 }
+.top-0{
+	top:0;
+}
+.left-0{
+	left:0;
+}
+.card-img-overlay-hover{
+	visibility:hidden;
+	opacity:0;
+	transition:all .7s;
+}
+.card:hover>.card-img-overlay-hover{
+	visibility:visible;
+	opacity:1;
+}
+.bg-black-25{
+	background-color:#00000042;
+}
+
+.carousel-dot-lg li{
+	height:1rem;
+	width:1rem;
+	border-radius:50%;
+}
+.carousel-dot li{
+	height:.75rem;
+	width:.75rem;
+	border-radius:50%;
+}
+.carousel-dot-sm li{
+	height:.5rem;
+	width:.5rem;
+	border-radius:50%;
+}
+
+.carousel-outline-dot li{
+	height:.75rem;
+	width:.75rem;
+	border-radius:50%;
+	border:1px solid white;
+	background-color:transparent;
+}
+.carousel-outline-dot li.active{
+	background-color:white;
+}
+
+
 

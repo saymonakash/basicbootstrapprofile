@@ -18,6 +18,16 @@
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		
+		<!-- WOW CSS -->
+		<link rel="stylesheet" href="css/animate.min.css">
+		
+		<!-- LIGHTBOX CSS -->
+		<link rel="stylesheet" href="css/lightbox.min.css"/>
+		
+		<!-- OwlCarousel CSS -->
+		<link rel="stylesheet" href="css/owl.carousel.min.css">
+		<link rel="stylesheet" href="css/owl.theme.default.min.css">
+		
 		<!-- STYLE SHEET CSS -->
 		<link rel="stylesheet" href="css/global.css">
 		<link rel="stylesheet" href="css/style.css">
@@ -80,7 +90,7 @@
 				
 			</section>
 			<!-- == About Me Part == -->
-			<section id="about">
+			<section id="about"class="wow animate__zoomIn" data-wow-duration="2s" data-wow-offset="50">
 				<div class="container-lg">
 					<!-- == About Me Content == -->
 					<div class="text-center">
@@ -89,7 +99,7 @@
 						<p  class="text-secondary mb-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 					</div>
 					<!-- == Progress Part == -->
-					<div class="row justify-content-center" id="progress">
+					<div class="row justify-content-center wow animate__zoomIn" data-wow-duration="1s" data-wow-offset="200"" id="progress">
 						<!-- == Progress BAR == -->
 						<div class="col-lg-4 col-md-4 col-sm-6 col-11 mb-4"><!-- == Progress BAR 01 == -->
 							<h6 class="text-uppercase mb-1">Web Design</h6>
@@ -131,7 +141,7 @@
 				</div>
 			</section>
 			<!-- == Services Part == -->
-			<section id="service"class="bg-size-cover bg-position-center bg-attachment-fixed">
+			<section id="service"class="bg-size-cover bg-position-center bg-attachment-fixed wow animate__zoomIn" data-wow-duration="2s" data-wow-offset="50">
 				<div class="container-lg">
 					<div class="text-center">
 						<h6 class="text-primary mb-0 font-weight-normal">My Services</h6>
@@ -195,81 +205,86 @@
 			<!-- == Portfolio Part == -->
 			<section id="project">
 				<div class="container-lg">
-					<div class="text-center">
-						<h6 class="text-primary mb-0 font-weight-normal">View All</h6>
-						<h1 class="text-uppercase pb-3 mb-4">My Projects</h1>
+					<h6 class="text-primary text-center mb-n1">View All</h6>
+					<h1 class="text-uppercase text-center">My Projects</h1>
+					<div class="text-center my-4">
+						<div class="btn-group btn-group-sm filter-button-group" role="group">
+						  <button type="button" class="btn btn-outline-secondary active" data-filter="*">All</button>
+						  <button type="button" class="btn btn-outline-secondary" data-filter=".webdesign">Web Design</button>
+						  <button type="button" class="btn btn-outline-secondary" data-filter=".webdevelopment">Web Development</button>
+						  <button type="button" class="btn btn-outline-secondary" data-filter=".graphicsdesign">Graphics Design</button>
+						</div>
 					</div>
-					<!-- == Portfolio Content == -->
-					<div class="row form-row justify-content-center">
-						<div class="col-lg-4 col-sm-6 col-11 mb-2"><!-- == Portfolio 001 == -->
+					<div class="form-row projects justify-content-center">
+						<div class="project-item col-11 col-sm-6 col-md-4 mb-2 graphicsdesign webdesign">
 							<div class="card">
-								<img class="card-img d-block" src="images/g1.jpg" alt="Project 1">
-								<div class="card-img-overlay p-2 top-auto card-hover-visible">
-									<a href="" class="btn btn-dark btn-block">View</a>
+								<img class="img-fluid" src="images/g1.jpg" alt="Project 1">
+								<div class="card-img-overlay top-auto card-img-overlay-hover">
+									<a href="images/g1.jpg" data-lightbox="Project-1" data-title="My Project" class="btn btn-dark btn-block">View</a>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-sm-6 col-11 mb-2"><!-- == Portfolio 002 == -->
+						<div class="project-item col-11 col-sm-6 col-md-4 mb-2 webdevelopment">
 							<div class="card">
-								<img class="card-img d-block" src="images/g2.jpg" alt="Project 2">
-								<div class="card-img-overlay p-2 top-auto card-hover-visible">
-									<a href="" class="btn btn-dark btn-block">View</a>
+								<img class="img-fluid" src="images/g2.jpg" alt="Project 2">
+								<div class="card-img-overlay top-auto card-img-overlay-hover">
+									<a href="images/g2.jpg" data-lightbox="Project-2" data-title="My Project" class="btn btn-dark btn-block">View</a>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-sm-6 col-11 mb-2"><!-- == Portfolio 003 == -->
+						<div class="project-item col-11 col-sm-6 col-md-4 mb-2 graphicsdesign webdevelopment webdesign">
 							<div class="card">
-								<img class="card-img d-block" src="images/g3.jpg" alt="Project 3">
-								<div class="card-img-overlay p-2 top-auto card-hover-visible">
-									<a href="" class="btn btn-dark btn-block">View</a>
+								<img class="img-fluid" src="images/g3.jpg" alt="Project 3">
+								<div class="card-img-overlay top-auto card-img-overlay-hover">
+									<a href="images/g3.jpg" data-lightbox="Project-3" data-title="My Project" class="btn btn-dark btn-block">View</a>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-sm-6 col-11 mb-2"><!-- == Portfolio 004 == -->
+						<div class="project-item col-11 col-sm-6 col-md-4 mb-2 webdevelopment webdesign">
 							<div class="card">
-								<img class="card-img d-block" src="images/g4.jpg" alt="Project 4">
-								<div class="card-img-overlay p-2 top-auto card-hover-visible">
-									<a href="" class="btn btn-dark btn-block">View</a>
+								<img class="img-fluid" src="images/g4.jpg" alt="Project 4">
+								<div class="card-img-overlay top-auto card-img-overlay-hover">
+									<a href="images/g4.jpg" data-lightbox="Project-4" data-title="My Project" class="btn btn-dark btn-block">View</a>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-sm-6 col-11 mb-2"><!-- == Portfolio 005 == -->
+						<div class="project-item col-11 col-sm-6 col-md-4 mb-2 graphicsdesign webdesign">
 							<div class="card">
-								<img class="card-img d-block" src="images/g5.jpg" alt="Project 5">
-								<div class="card-img-overlay p-2 top-auto card-hover-visible">
-									<a href="" class="btn btn-dark btn-block">View</a>
+								<img class="img-fluid" src="images/g5.jpg" alt="Project 5">
+								<div class="card-img-overlay top-auto card-img-overlay-hover">
+									<a href="images/g5.jpg" data-lightbox="Project-5" data-title="My Project" class="btn btn-dark btn-block">View</a>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-sm-6 col-11 mb-2"><!-- == Portfolio 006 == -->
+						<div class="project-item col-11 col-sm-6 col-md-4 mb-2 graphicsdesign">
 							<div class="card">
-								<img class="card-img d-block" src="images/g6.jpg" alt="Project 6">
-								<div class="card-img-overlay p-2 top-auto card-hover-visible">
-									<a href="" class="btn btn-dark btn-block">View</a>
+								<img class="img-fluid" src="images/g6.jpg" alt="Project 6">
+								<div class="card-img-overlay top-auto card-img-overlay-hover">
+									<a href="images/g6.jpg" data-lightbox="Project-6" data-title="My Project" class="btn btn-dark btn-block">View</a>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-sm-6 col-11 mb-2"><!-- == Portfolio 007 == -->
+						<div class="project-item col-11 col-sm-6 col-md-4 mb-2 webdesign">
 							<div class="card">
-								<img class="card-img d-block" src="images/g7.jpg" alt="Project 7">
-								<div class="card-img-overlay p-2 top-auto card-hover-visible">
-									<a href="" class="btn btn-dark btn-block">View</a>
+								<img class="img-fluid" src="images/g7.jpg" alt="Project 7">
+								<div class="card-img-overlay top-auto card-img-overlay-hover">
+									<a href="images/g7.jpg" data-lightbox="Project-7" data-title="My Project" class="btn btn-dark btn-block">View</a>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-sm-6 col-11 mb-2"><!-- == Portfolio 008 == -->
+						<div class="project-item col-11 col-sm-6 col-md-4 mb-2 webdesign graphicsdesign">
 							<div class="card">
-								<img class="card-img d-block" src="images/g8.jpg" alt="Project 8">
-								<div class="card-img-overlay p-2 top-auto card-hover-visible">
-									<a href="" class="btn btn-dark btn-block">View</a>
+								<img class="img-fluid" src="images/g8.jpg" alt="Project 8">
+								<div class="card-img-overlay top-auto card-img-overlay-hover">
+									<a href="images/g8.jpg" data-lightbox="Project-8" data-title="My Project" class="btn btn-dark btn-block">View</a>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-sm-6 col-11 mb-2"><!-- == Portfolio 009 == -->
+						<div class="project-item col-11 col-sm-6 col-md-4 mb-2 webdevelopment">
 							<div class="card">
-								<img class="card-img d-block" src="images/g9.jpg" alt="Project 9">
-								<div class="card-img-overlay p-2 top-auto card-hover-visible">
-									<a href="" class="btn btn-dark btn-block">View</a>
+								<img class="img-fluid" src="images/g9.jpg" alt="Project 9">
+								<div class="card-img-overlay top-auto card-img-overlay-hover">
+									<a href="images/g9.jpg" data-lightbox="Project-9" data-title="My Project" class="btn btn-dark btn-block">View</a>
 								</div>
 							</div>
 						</div>
@@ -283,29 +298,29 @@
 						<!-- == Review Content == -->
 						<div class="col-md-3 col-6 mb-4 text-center"><!-- == Review Part01 == -->
 							<h2 class="text-warning mb-4"><i class="far fa-lightbulb"></i></h2>
-							<h3 class="text-weight-bold text-white mb-4">48</h3>
+							<h3 class="text-weight-bold text-white mb-4 counter">4812</h3>
 							<h6 class="text-white">Project Done</h6>
 						</div>
 						<div class="col-md-3 col-6 mb-4 text-center"><!-- == Review Part02 == -->
 							<h2 class="text-warning mb-4"><i class="far fa-heart"></i></h2>
-							<h3 class="text-weight-bold text-white mb-4">42</h3>
+							<h3 class="text-weight-bold text-white mb-4 counter">4212</h3>
 							<h6 class="text-white">Satisfied Client</h6>
 						</div>
 						<div class="col-md-3 col-6 mb-4 text-center"><!-- == Review Part03 == -->
 							<h2 class="text-warning mb-4"><i class="fas fa-magic"></i></h2>
-							<h3 class="text-weight-bold text-white mb-4">56</h3>
+							<h3 class="text-weight-bold text-white mb-4 counter">5612</h3>
 							<h6 class="text-white">Awards</h6>
 						</div>
 						<div class="col-md-3 col-6 mb-4 text-center"><!-- == Review Part04 == -->
 							<h2 class="text-warning mb-4"><i class="fas fa-grin-alt"></i></h2>
-							<h3 class="text-weight-bold text-white mb-4">78</h3>
+							<h3 class="text-weight-bold text-white mb-4 counter">7812</h3>
 							<h6 class="text-white">Happy Clients</h6>
 						</div>
 					</div>
 				</div>
 			</section>
 			<!-- == Contact Us Part == -->
-			<section id="contact"class="bg-size-cover bg-position-center bg-attachment-fixed">
+			<section id="contact"class="bg-size-cover bg-position-center bg-attachment-fixed wow animate__zoomIn" data-wow-duration="2s" data-wow-offset="50">
 				<div class="container-lg">
 					<div class="text-center">
 						<h6 class="text-primary mb-0 font-weight-normal">Find Me</h6>
@@ -381,10 +396,55 @@
 		<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
 		<script src="js/jquery-3.5.1.min.js"></script>
 		<script src="js/bootstrap.bundle.min.js"></script>
-		<script src="js/popper.min.js"></script>
+		<!-- Wow JS -->
+		<script src="js/wow.min.js"></script>
+		<!-- LIGHTBOX JS -->
+		<script src="js/lightbox-plus-jquery.min.js"></script>
+		<!-- OwlCarousel JS -->
+		<script src="js/owl.carousel.min.js"></script>
+		<!-- Counter JS -->
+		<script src="js/jquery.waypoints.min.js"></script>
+		<script src="js/jquery.counterup.min.js"></script>
+		<!--  Isotope Js -->
+		<script src="js/isotope.pkgd.min.js"></script>
 		<script src="js/custom.js"></script>
+		<script>
+           $('.counter').counterUp({
+				delay: 10,
+				time: 1000
+			});
+        </script>
+		<script>
+            new WOW().init();
+        </script>
+		<script>
+          $(document).ready(function(){
+			  $("#portfolio-owlcarousel").owlCarousel(
+			  {
+				items:4,
+				loop:true,
+				margin:10,
+				autoplay:true,
+				autoplayTimeout:1000,
+				autoplayHoverPause:true,
+			});
+		});
+        </script>
+		<script>
+			var $grid =  $('.projects').isotope({
+			  // options
+			  itemSelector: '.project-item',
+			  layoutMode: 'fitRows'
+			});
+			// filter items on button click
+			$('.filter-button-group').on( 'click', 'button', function() {
+			  $('.filter-button-group .btn').removeClass('active');
+			  var filterValue = $(this).attr('data-filter');
+			  $grid.isotope({ filter: filterValue });
+			  $(this).addClass('active');
+			});
+        </script>
 	</body>
-	
 </html>
 
 
